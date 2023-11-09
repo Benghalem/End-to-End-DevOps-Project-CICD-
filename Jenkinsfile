@@ -13,7 +13,7 @@ pipeline {
         }
         stage("Checkout from SCM"){
                 steps {
-                    git branch: 'main', credentialsId: 'github', url: 'https://github.com/Benghalem/End-to-End-DevOps-Project-CICD-'
+                    git branch: 'main', credentialsId: 'githup', url: 'https://github.com/Benghalem/End-to-End-DevOps-Project-CICD-'
                 }
         }
         stage("Build Application"){
