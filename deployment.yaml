@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: register-app-ci
-          image: benghalemaziz/register-app-ci:1.0.0-9
+          image: benghalemaziz/register-app-ci:1.0.0-10
           resources:
             limits:
               memory: "256Mi"
