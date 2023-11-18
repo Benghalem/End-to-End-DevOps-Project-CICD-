@@ -5,13 +5,13 @@ pipeline {
         maven 'Maven3'
     }
     environment {
-	    APP_NAME = "register-app-ci"
+	    APP_NAME = "register-app-cd"
             RELEASE = "1.0.0"
             DOCKER_USER = "benghalemaziz"
             DOCKER_PASS = 'Docker'
             IMAGE_NAME = "${DOCKER_USER}" + "/" + "${APP_NAME}"
             IMAGE_TAG = "${RELEASE}-${BUILD_NUMBER}"
-	    JENKINS_API_TOKEN = credentials("Docker")
+	    JENKINS_API_TOKEN = credentials("JENKINS_API_TOKEN")
     }
 
     stages{
